@@ -17,6 +17,7 @@
 
 <svelte:head>
     <title>{app.name}</title>
+    @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 </svelte:head>
 
 <div class="reveal">
