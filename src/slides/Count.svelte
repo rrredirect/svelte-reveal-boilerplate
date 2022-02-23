@@ -11,20 +11,22 @@ export let counters = {
 
 
 <style>
-	p {
-		color: purple;
-		font-family: 'Comic Sans MS', cursive;
-		font-size: 2em;
-	}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url("/fonts/Noto_Sans/NotoSans-Regular.ttf") format("ttf");
+}
+
+    .text {
+        font-family: Noto Sans
+    }
 </style>
 
 
 
 <section>
 
-<p>Styled!</p>
-
-   /* <Counter values={counters} duration="5000" random="false" minspeed="200" let:counterResult>
-        <h1>{counterResult.views} animation views</h1>
-    </Counter> */
+ 	<Counter values={counters} duration="5000" random="false" minspeed="200" let:counterResult>
+        <p class="text">{counterResult.views} animation views</p>
+    </Counter> 
 </section>
